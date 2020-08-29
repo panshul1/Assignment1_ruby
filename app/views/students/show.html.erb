@@ -3,13 +3,15 @@
 <h2> Courses </h2>
 <%= button_to "Register Course", new_enrollment_path, method: :get%>
 <ul>
-<%@studemt.enrollments.each do |enrollment|%>
-    <li><%= enrollment.course.name%></li>
-    <%= button_to "Drop Enrollment", enrollment_path(enrollment), method: :delete%>
+    <%@student.enrollments.each do |enrollment|%>
+         <li><%= enrollment.course.name%></li>
+          <%= button_to "Drop Enrollment", enrollment_path(enrollment), method: :delete%>
     <%end%>
 </ul>
 <%= button_to "Edit Student", edit_student_path, method: :get%>
 <%= button_to "Destroy Student", student_path, method: :delete%>
-<%= link_to "Destroy Student", student_path %>
+
+
+<%= link_to "Destroy Student", student_path%>
  
 

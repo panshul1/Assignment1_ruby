@@ -2,14 +2,14 @@
 
 <% if flash[:errors] %>
     <% flash[:errors].each do |error| %>
-       <p style="color: red"><%= error%></p>
+       <p style="color: red"> <%= error%></p>
     <%end%>
 <%end%>
-    <%=form_for @student do |f|%>
-        <% f.label :name%>
-        <% f.text_field :name %>
-        <%f.label :age%>
-        <% f.number_field :age%>
+<%=form_for @student do |f|%>
+        <%= f.label :name%>
+        <%= f.text_field :name %>
+        <%=f.label :age%>
+        <%= f.number_field :age%>
 
         <%= f.submit%>
 <%end%>
