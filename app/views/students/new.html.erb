@@ -1,8 +1,8 @@
 <h1>Students New Form</h1>
-<p>Find me in app/views/students/new.html.erb</p>
+
 <% if flash[:errors] %>
    <% flash[:errors].each do |error| %>
-    <p style="color:red"><%= error%></p>
+    <p style="color: red"><%= error%></p>
     <%end%>
     <%end%>
     <%=form_for @student do |f| %>
@@ -13,6 +13,6 @@
 
         <%= f.submit%>
         <%end%>
-        
+
 
 
