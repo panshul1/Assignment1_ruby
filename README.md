@@ -1,5 +1,5 @@
 here i hosted the website on heroku 
-# plz click on the link 
+# plz click on the link to run the application 
 https://course-regapp-panshul.herokuapp.com
 
 
